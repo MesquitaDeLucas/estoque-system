@@ -80,7 +80,7 @@ ESTOQUE-SYSTEM/
 ## 1. Clonar o repositório
 
 ```bash
-git clone LINK_DO_REPOSITORIO
+git clone https://github.com/MesquitaDeLucas/estoque-system.git
 ```
 
 ---
