@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 30px;
+    color: #222;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #1f2937;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-excluir {
+    background-color: #dc2626;
+    margin-left: 10px;
+}
+
+.btn-excluir:hover {
+    background-color: #b91c1c;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #e5e7eb;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.dashboard .card {
+    text-align: center;
+}
+
+.dashboard h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #2563eb;
+}
+
+.dashboard p {
+    margin: 0;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 25px 0;
+}
+
+@media (max-width: 900px) {
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
